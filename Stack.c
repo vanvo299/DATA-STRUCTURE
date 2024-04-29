@@ -52,7 +52,7 @@ void pop(Stack S)
 {
     if (!is_empty(S)) {
         StackNode topNode = S->next;
-        S->next = S->next->next;
+        S->next = topNode->next;
         free(topNode);
     }
 }
