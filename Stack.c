@@ -102,5 +102,12 @@ int main()
 
     pop(a);
     show_stack(a);
+
+    StackNode result = Top(a);
+	if(result != NULL) {
+		printf("The element of the stack on top: %d\n", result->e.value);
+	}
+
+    free(a);
     return 0;
 }
